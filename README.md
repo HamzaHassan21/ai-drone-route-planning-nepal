@@ -138,3 +138,9 @@ Demonstration of classical AI search techniques in real-world contexts
 # License
 
 This project is released for educational use. You may reference or adapt the code with proper attribution.
+
+## Author Hamza Hassan - Final-Year Computer Science Student, Cloud & DevOps Enthusiast
+
+## 📫 Connect with Me
+[LinkedIn](https://www.linkedin.com/in/hamzahassan21/)
+[Youtube](https://www.youtube.com/channel/UC51JEAEBV8WXwf2ZLROvUJw)

@@ -71,7 +71,8 @@ Route computation
 
 Visualisation of the final path
 
-A diagram illustrating this architecture is included in the repository.
+A diagram illustrating this architecture is included in the repository
+![System_Architecture](Diagrams/system_architecture_nepal_drone_ai.png)
 
 # Dataset / Graph Description
 

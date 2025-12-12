@@ -1,11 +1,11 @@
 # AI Drone Route Planning in the Nepal Mountain Region
-# Overview
+## Overview
 
 This project implements an AI-driven drone navigation system designed to compute safe and efficient routes across mountainous regions in Nepal. The system models the terrain as a weighted graph and applies three classic search algorithms – Breadth-First Search (BFS), Depth-First Search (DFS), and A* – to analyse and compare different navigation strategies.
 
 This work was developed as part of the Applied AI module, demonstrating the use of artificial intelligence techniques for real-world problem-solving, specifically in the context of autonomous aerial navigation where terrain, distance, battery constraints, and accessibility are critical factors.
 
-# Features
+## Features
 
 Graph-based model of key locations in the Nepal Himalayan region.
 
@@ -19,7 +19,7 @@ Visualisation of computed drone routes using Matplotlib.
 
 Simulation of real-world uncertainty through randomised delay factors.
 
-# Technologies Used
+## Technologies Used
 
 Python 3.x
 
@@ -34,19 +34,20 @@ Random (delay simulation)
 Jupyter Notebook
 
 # Algorithms Implemented
-Breadth-First Search (BFS)
+
+## Breadth-First Search (BFS)
 
 Explores the search graph level by level.
 Guarantees the fewest number of hops but not the shortest physical distance.
 Used as a baseline for comparison.
 
-Depth-First Search (DFS)
+## Depth-First Search (DFS)
 
 Explores along a single path as deeply as possible before backtracking.
 Not distance-aware and can produce suboptimal routes.
 Useful for demonstrating limitations in navigation contexts.
 
-A Search Algorithm*
+## A Search Algorithm*
 
 Combines the actual cost (g-score) and an admissible heuristic (straight-line estimate).
 Produces efficient and realistic routes for drone flight.

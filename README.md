@@ -41,7 +41,7 @@ Explores the search graph level by level.
 Guarantees the fewest number of hops but not the shortest physical distance.
 Used as a baseline for comparison.
 
-## Depth-First Search (DFS)
+## Depth-First Search (DFS)
 
 Explores along a single path as deeply as possible before backtracking.
 Not distance-aware and can produce suboptimal routes.

@@ -115,10 +115,12 @@ View the plotted navigation path
 
 # Project Structure
 /notebooks
-    DroneRoutePlanner.ipynb
+    
 
 /diagrams
-    system_architecture.png
+    sa_star_route_plot.png
+    route_visualisation.png
+    system_architecture_nepal_drone_ai.drawio.png
 
 /code
     pathfinding.py

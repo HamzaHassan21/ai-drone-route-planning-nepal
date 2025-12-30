@@ -73,7 +73,7 @@ Visualisation of the final path
 
 A high-level diagram showing the overall system architecture and data flow is provided below.
 
-![System Architecture Diagram](diagrams/system_architecture_nepal_drone_ai.png)
+![System Architecture Diagram](diagrams/system_architecture_nepal_drone_ai.drawio.png)
 
 
 # Dataset / Graph Description

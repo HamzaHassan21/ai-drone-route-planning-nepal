@@ -7,17 +7,12 @@ This work was developed as part of the Applied AI module, demonstrating the use 
 
 ## Features
 
-Graph-based model of key locations in the Nepal Himalayan region.
-
-Implementations of BFS, DFS, and A* search algorithms.
-
-Heuristic-based route optimisation using straight-line distance estimates.
-
-Comparative analysis of algorithm performance and route quality.
-
-Visualisation of computed drone routes using Matplotlib.
-
-Simulation of real-world uncertainty through randomised delay factors.
+- Graph-based model of key locations in the Nepal Himalayan region
+- Implementations of BFS, DFS, and A* search algorithms
+- Heuristic-based route optimisation using straight-line distance estimates
+- Comparative analysis of algorithm performance and route quality
+- Visualisation of computed drone routes using Matplotlib
+- Simulation of real-world uncertainty through randomised delay factors
 
 ## Technologies Used
 
@@ -47,7 +42,7 @@ Explores along a single path as deeply as possible before backtracking.
 Not distance-aware and can produce suboptimal routes.
 Useful for demonstrating limitations in navigation contexts.
 
-## A Search Algorithm*
+## A* Search Algorithm*
 
 Combines the actual cost (g-score) and an admissible heuristic (straight-line estimate).
 Produces efficient and realistic routes for drone flight.
@@ -88,7 +83,7 @@ The heuristic estimates straight-line distance to the goal region
 
 This abstraction provides a simplified but practical model for demonstrating navigation algorithms.
 
-# AI Drone Route Planning in the Nepal Mountain Region
+# Route Visualisation
 
 ![Drone Route Visualisation](diagrams/route_visualisation.png)
 

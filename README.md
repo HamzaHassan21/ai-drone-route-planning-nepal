@@ -90,7 +90,7 @@ This abstraction provides a simplified but practical model for demonstrating nav
 
 # AI Drone Route Planning in the Nepal Mountain Region
 
-![Drone Route Visualisation](diagrams/a_star_route_visualisation.png)
+![Drone Route Visualisation](diagrams/route_visualisation.png)
 
 ## Route Visualisation Example
 

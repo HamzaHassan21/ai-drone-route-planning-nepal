@@ -71,8 +71,10 @@ Route computation
 
 Visualisation of the final path
 
-A diagram illustrating this architecture is included in the repository
-![System_Architecture](Diagrams/system_architecture_nepal_drone_ai.png)
+A high-level diagram showing the overall system architecture and data flow is provided below.
+
+![System Architecture Diagram](diagrams/system_architecture_nepal_drone_ai.png)
+
 
 # Dataset / Graph Description
 
@@ -85,6 +87,16 @@ Edges represent possible drone flight paths with approximate distances (km)
 The heuristic estimates straight-line distance to the goal region
 
 This abstraction provides a simplified but practical model for demonstrating navigation algorithms.
+
+# AI Drone Route Planning in the Nepal Mountain Region
+
+![Drone Route Visualisation](diagrams/a_star_route_visualisation.png)
+
+## Route Visualisation Example
+
+Below is an example of a route generated using the A* search algorithm, visualised on a simplified 2D map of the Nepal region.
+
+![A* Route Plot](diagrams/a_star_route_plot.png)
 
 # How to Run
 

@@ -142,6 +142,12 @@ Disaster response and supply delivery planning
 
 Demonstration of classical AI search techniques in real-world contexts
 
+## Demo Video
+
+The demo video walks through the Jupyter notebook and explains how the BFS, DFS, and A* algorithms are applied to the Nepal drone navigation problem. It highlights the input data, algorithm behaviour, and final route visualisations.
+
+**YouTube Demo:** *(link to be added)*
+
 # License
 
 This project is released for educational use. You may reference or adapt the code with proper attribution.

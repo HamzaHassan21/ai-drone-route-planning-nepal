@@ -156,7 +156,7 @@ Algorithm comparison in applied AI coursework
 
 A short video walkthrough demonstrates the notebook, explains each algorithm, and shows how the routes are generated and visualised.
 
-YouTube Demo: (link to be added)
+YouTube Demo: https://www.youtube.com/watch?v=6Ufuo1ziNpM&t=1s
 
 ## License
 
@@ -170,6 +170,6 @@ Cloud & DevOps Enthusiast
 
 ## 📫 Connect with me:
 
-LinkedIn
+LinkedIn: https://www.linkedin.com/in/hamzahassan21/
 
-YouTube
+YouTube: https://www.youtube.com/@hamzahassan2121

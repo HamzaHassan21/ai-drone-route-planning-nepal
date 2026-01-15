@@ -114,6 +114,7 @@ To guarantee correctness and avoid over-optimistic estimates, the heuristic valu
   AI_Drone_Route_Planning_Nepal.ipynb
 
 /diagrams
+
   system_architecture_nepal_drone_ai.drawio.png
   
   a_star_route_plot.png
@@ -128,7 +129,7 @@ To guarantee correctness and avoid over-optimistic estimates, the heuristic valu
   
   heuristic_distance_dictionairy.png
 
-README.md
+/README.md
 
 ## Evaluation Summary
 

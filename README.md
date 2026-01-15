@@ -1,159 +1,167 @@
 # AI Drone Route Planning in the Nepal Mountain Region
 ## Overview
 
-This project implements an AI-driven drone navigation system designed to compute safe and efficient routes across mountainous regions in Nepal. The system models the terrain as a weighted graph and applies three classic search algorithms – Breadth-First Search (BFS), Depth-First Search (DFS), and A* – to analyse and compare different navigation strategies.
+This project explores the use of classical Artificial Intelligence search algorithms for autonomous drone navigation in mountainous terrain. The system models key regions of Nepal as a weighted graph and compares the behaviour of Breadth-First Search (BFS), Depth-First Search (DFS), and A* when planning routes between locations.
 
-This work was developed as part of the Applied AI module, demonstrating the use of artificial intelligence techniques for real-world problem-solving, specifically in the context of autonomous aerial navigation where terrain, distance, battery constraints, and accessibility are critical factors.
+The work was developed as part of the Applied AI module and focuses on realistic navigation constraints such as distance optimisation, battery efficiency, and route feasibility in high-altitude environments. While simplified, the prototype demonstrates how different AI search strategies behave when applied to a real-world inspired problem.
 
-## Features
+## Key Features
 
-- Graph-based model of key locations in the Nepal Himalayan region
-- Implementations of BFS, DFS, and A* search algorithms
-- Heuristic-based route optimisation using straight-line distance estimates
-- Comparative analysis of algorithm performance and route quality
-- Visualisation of computed drone routes using Matplotlib
-- Simulation of real-world uncertainty through randomised delay factors
+Manually defined weighted graph representing major regions in Nepal
+
+Implementations of BFS, DFS, and A* search algorithms
+
+Distance-aware route optimisation using weighted edges
+
+Admissible heuristic configuration for A* (Uniform Cost Search behaviour)
+
+Visual comparison of algorithm outputs
+
+Simulation of real-world uncertainty using a random delay factor
+
+Clear system architecture and route visualisation plots
 
 ## Technologies Used
 
-Python 3.x
-
-Matplotlib
-
-Collections (deque)
-
-Heapq (priority queue)
-
-Random (delay simulation)
+Python 3
 
 Jupyter Notebook
 
-# Algorithms Implemented
+Matplotlib (visualisation)
 
-## Breadth-First Search (BFS)
+collections.deque (BFS)
 
-Explores the search graph level by level.
-Guarantees the fewest number of hops but not the shortest physical distance.
-Used as a baseline for comparison.
+heapq (priority queue for A*)
 
-## Depth-First Search (DFS)
+random (delay simulation)
 
-Explores along a single path as deeply as possible before backtracking.
-Not distance-aware and can produce suboptimal routes.
-Useful for demonstrating limitations in navigation contexts.
+## Algorithms Implemented
 
-## A* Search Algorithm*
+### Breadth-First Search (BFS)
 
-Combines the actual cost (g-score) and an admissible heuristic (straight-line estimate).
-Produces efficient and realistic routes for drone flight.
-Most appropriate for autonomous navigation in this scenario.
+Explores the graph level by level
 
-# System Architecture
+Guarantees the fewest number of hops
 
-The system includes the following components:
+Does not minimise physical distance
 
-User input (start location, destination, search algorithm)
+Used as a baseline for comparison
 
-Graph representation of Nepal’s mountainous regions
+### Depth-First Search (DFS)
 
-Algorithm selection module
+Explores one path deeply before backtracking
 
-Search engine (BFS, DFS, A*)
+Memory-efficient but highly inefficient for navigation
 
-Heuristic evaluation module
+Often produces long, unrealistic routes
 
-Route computation
+### A* Search (Uniform Cost Configuration)
 
-Visualisation of the final path
+Uses path cost accumulation to prioritise routes
 
-A high-level diagram showing the overall system architecture and data flow is provided below.
+Heuristic values are set to zero to ensure admissibility
 
-![System Architecture Diagram](diagrams/system_architecture_nepal_drone_ai.drawio.png)
+Guarantees the shortest path by total distance on the weighted graph
 
+Produces the most realistic routes for drone navigation
 
-# Dataset / Graph Description
+## System Architecture
 
-The Himalayan region is represented as a weighted graph where:
+The system follows a clear and interpretable pipeline:
 
-Nodes are major waypoints (Lukla, Namche Bazaar, Gokyo Valley, etc.)
+User selects start location, destination, and algorithm
 
-Edges represent possible drone flight paths with approximate distances (km)
+A predefined Nepal mountain graph is used as the data source
 
-The heuristic estimates straight-line distance to the goal region
+The selected algorithm (BFS, DFS, or A*) computes a route
 
-This abstraction provides a simplified but practical model for demonstrating navigation algorithms.
+Total distance and delay are calculated
 
-# Route Visualisation
+The final path is visualised on a simplified map
 
-![Drone Route Visualisation](diagrams/route_visualisation.png)
+## System Architecture Diagram:
 
-## Route Visualisation Example
+Dataset / Graph Description
 
-Below is an example of a route generated using the A* search algorithm, visualised on a simplified 2D map of the Nepal region.
+No external dataset is used. Instead, the environment is manually defined to keep the focus on algorithmic behaviour.
 
-![A* Route Plot](diagrams/a_star_route_plot.png)
+Nodes represent key locations (e.g. Lukla, Namche Bazaar, Dolpa)
 
-# How to Run
+Edges represent possible drone flight paths
 
-Clone the repository:
+Edge weights represent estimated flight distances (km)
 
-git clone https://github.com/<your-username>/<repo-name>.git
+The graph serves as the complete search space for all algorithms
 
+This controlled setup allows for transparent comparison between search techniques.
 
-Open the Jupyter notebook:
+## Route Visualisation Examples
 
-jupyter notebook
+Each algorithm produces a visibly different route:
 
+A* Route (Shortest Distance)
 
-Run all cells to:
+BFS Route (Fewest Stops)
 
-Generate routes using BFS, DFS, and A*
+DFS Route (Inefficient Exploration)
 
-Calculate distance and delay
+Heuristic Configuration
 
-View the plotted navigation path
+To guarantee correctness and avoid over-optimistic estimates, the heuristic values for A* are set to zero for all nodes. This makes A* behave as Uniform Cost Search, ensuring the shortest path by distance on the weighted graph.
 
-# Project Structure
+## Project Structure
 /notebooks
-    AI_Drone_Route_Planning_Nepal.ipynb
+  AI_Drone_Route_Planning_Nepal.ipynb
 
 /diagrams
-    sa_star_route_plot.png
-    route_visualisation.png
-    system_architecture_nepal_drone_ai.drawio.png
+  system_architecture_nepal_drone_ai.drawio.png
+  a_star_route_plot.png
+  bfs_route_plot.png
+  dfs_route_plot.png
+  route_visualisation.png
+  weighted_graph.png
+  heuristic_distance_dictionairy.png
 
 README.md
 
-# Evaluation Summary
+## Evaluation Summary
 
-BFS finds simple routes with few transitions but does not minimise travel distance.
+BFS finds short paths in terms of hops but ignores distance
 
-DFS is inefficient for geographic navigation due to deep and potentially irrelevant exploration.
+DFS is unsuitable for navigation due to inefficient exploration
 
-A* consistently produces the most appropriate path for drone navigation because it incorporates both cost and heuristic estimation.
+A* consistently produces the most realistic routes by minimising total distance
 
-# Use Cases
+The results clearly demonstrate why distance-aware search is essential for autonomous drone navigation in mountainous regions.
 
-Autonomous drone navigation in difficult terrain
+## Use Cases
 
-Route optimisation research
+Drone route planning in remote or high-altitude terrain
 
-Disaster response and supply delivery planning
+Humanitarian supply delivery and rescue planning
 
-Demonstration of classical AI search techniques in real-world contexts
+Teaching and demonstration of classical AI search algorithms
+
+Algorithm comparison in applied AI coursework
 
 ## Demo Video
 
-The demo video walks through the Jupyter notebook and explains how the BFS, DFS, and A* algorithms are applied to the Nepal drone navigation problem. It highlights the input data, algorithm behaviour, and final route visualisations.
+A short video walkthrough demonstrates the notebook, explains each algorithm, and shows how the routes are generated and visualised.
 
-**YouTube Demo:** *(link to be added)*
+YouTube Demo: (link to be added)
 
-# License
+## License
 
-This project is released for educational use. You may reference or adapt the code with proper attribution.
+This project is intended for educational use. You are welcome to reference or adapt the work with appropriate attribution.
 
-## Author Hamza Hassan - Final-Year Computer Science Student, Cloud & DevOps Enthusiast
+## Author
 
-## 📫 Connect with Me
-[LinkedIn](https://www.linkedin.com/in/hamzahassan21/)
-[Youtube](https://www.youtube.com/channel/UC51JEAEBV8WXwf2ZLROvUJw)
+Hamza Hassan
+Final-Year Computer Science Student
+Cloud & DevOps Enthusiast
+
+## 📫 Connect with me:
+
+LinkedIn
+
+YouTube

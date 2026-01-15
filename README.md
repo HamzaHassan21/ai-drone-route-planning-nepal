@@ -125,23 +125,23 @@ To guarantee correctness and avoid over-optimistic estimates, the heuristic valu
 ## Project Structure
 /notebooks
   
-  AI_Drone_Route_Planning_Nepal.ipynb
+     AI_Drone_Route_Planning_Nepal.ipynb
 
 /diagrams
 
-  system_architecture_nepal_drone_ai.drawio.png
+     system_architecture_nepal_drone_ai.drawio.png
   
-  a_star_route_plot.png
+     a_star_route_plot.png
   
-  bfs_route_plot.png
+     bfs_route_plot.png
   
-  dfs_route_plot.png
+     dfs_route_plot.png
   
-  route_visualisation.png
+     route_visualisation.png
   
-  weighted_graph.png
+     weighted_graph.png
   
-  heuristic_distance_dictionairy.png
+     heuristic_distance_dictionairy.png
   
 /Project Overview and Data Definition.pdf
 

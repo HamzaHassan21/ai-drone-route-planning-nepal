@@ -142,6 +142,8 @@ To guarantee correctness and avoid over-optimistic estimates, the heuristic valu
   weighted_graph.png
   
   heuristic_distance_dictionairy.png
+  
+/Project Overview and Data Definition.pdf
 
 /README.md
 

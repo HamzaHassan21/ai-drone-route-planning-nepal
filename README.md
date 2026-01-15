@@ -115,11 +115,17 @@ To guarantee correctness and avoid over-optimistic estimates, the heuristic valu
 
 /diagrams
   system_architecture_nepal_drone_ai.drawio.png
+  
   a_star_route_plot.png
+  
   bfs_route_plot.png
+  
   dfs_route_plot.png
+  
   route_visualisation.png
+  
   weighted_graph.png
+  
   heuristic_distance_dictionairy.png
 
 README.md

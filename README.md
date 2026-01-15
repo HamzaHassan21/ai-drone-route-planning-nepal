@@ -79,7 +79,7 @@ Total distance and delay are calculated
 
 The final path is visualised on a simplified map
 
-### System Architecture Diagram: ![System Architecture Diagram](diagrams/system_architecture_nepal_drone_ai.drawio)
+### System Architecture Diagram: ![System Architecture Diagram](diagrams/system_architecture_nepal_drone_ai.drawio.png)
 
 ## Dataset / Graph Description
 

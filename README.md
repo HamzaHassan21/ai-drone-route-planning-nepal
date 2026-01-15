@@ -9,6 +9,8 @@ The work was developed as part of the Applied AI module and focuses on realistic
 
 Manually defined weighted graph representing major regions in Nepal
 
+![Weighted Graph](diagrams/weighted_graph.PNG)
+
 Implementations of BFS, DFS, and A* search algorithms
 
 Distance-aware route optimisation using weighted edges

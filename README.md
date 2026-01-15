@@ -106,15 +106,17 @@ A* Route (Shortest Distance ~ 58km)
 ![A* ROUTE PLOT](diagrams/a_star_route_plot.PNG)
 
 
-BFS Route (Fewest Stops ~ 131)
+BFS Route (Fewest Stops ~ 131km)
 
 ![BFS ROUTE PLOT](diagrams/bfs_route_plot.PNG)
 
-DFS Route (Inefficient Exploration ~ 141)
+DFS Route (Inefficient Exploration ~ 141km)
 
 ![DFS ROUTE PLOT](diagrams/dfs_route_plot.PNG)
 
-Heuristic Configuration
+Heuristic Configuration 
+
+![heuristic distance dictionairy](diagrams/heuristic_distance_dictionairy.PNG)
 
 To guarantee correctness and avoid over-optimistic estimates, the heuristic values for A* are set to zero for all nodes. This makes A* behave as Uniform Cost Search, ensuring the shortest path by distance on the weighted graph.
 

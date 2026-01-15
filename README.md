@@ -108,7 +108,11 @@ A* Route (Shortest Distance ~ 58km)
 
 BFS Route (Fewest Stops ~ 131)
 
+![BFS ROUTE PLOT](diagrams/bfs_route_plot.PNG)
+
 DFS Route (Inefficient Exploration ~ 141)
+
+![DFS ROUTE PLOT](diagrams/dfs_route_plot.PNG)
 
 Heuristic Configuration
 

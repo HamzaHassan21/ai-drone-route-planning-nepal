@@ -79,9 +79,9 @@ Total distance and delay are calculated
 
 The final path is visualised on a simplified map
 
-## System Architecture Diagram:
+### System Architecture Diagram: ![System Architecture Diagram](diagrams/system_architecture_nepal_drone_ai.drawio)
 
-Dataset / Graph Description
+## Dataset / Graph Description
 
 No external dataset is used. Instead, the environment is manually defined to keep the focus on algorithmic behaviour.
 

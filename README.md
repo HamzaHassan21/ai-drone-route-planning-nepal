@@ -101,11 +101,14 @@ This controlled setup allows for transparent comparison between search technique
 
 Each algorithm produces a visibly different route:
 
-A* Route (Shortest Distance)
+A* Route (Shortest Distance ~ 58km) 
 
-BFS Route (Fewest Stops)
+![A* ROUTE PLOT](diagrams/a_star_route_plot.PNG)
 
-DFS Route (Inefficient Exploration)
+
+BFS Route (Fewest Stops ~ 131)
+
+DFS Route (Inefficient Exploration ~ 141)
 
 Heuristic Configuration
 
